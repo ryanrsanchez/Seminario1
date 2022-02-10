@@ -33,6 +33,14 @@ namespace Seminario1
                     Console.WriteLine("Numero insert:" + arr[0]);
                 }
 
+                if(opcion == 2)
+                {
+                    Console.WriteLine ("Ingrese un elemento en la posicion 0");
+                    arr[0] = int.Parse(Console.ReadLine());
+             
+                    Console.WriteLine ("posicion 0:" + arr[0]);
+                }
+
                
 
             } while (opcion != 10);
