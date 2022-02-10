@@ -40,6 +40,11 @@ namespace Seminario1
              
                     Console.WriteLine ("posicion 0:" + arr[0]);
                 }
+                 if(opcion == 3){
+                    Console.WriteLine ("Ingrese un elemento en la posicion ultima posicion:");
+                    arr[9] = int.Parse(Console.ReadLine());
+                    Console.WriteLine ("posicion 0:" + arr[9]);
+                }
 
                
 
