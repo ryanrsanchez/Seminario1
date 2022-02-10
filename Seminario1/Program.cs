@@ -46,15 +46,15 @@ namespace Seminario1
                     Console.WriteLine ("posicion 0:" + arr[9]);
                 }
 
-                  if(opcion==4){
-                  Console.WriteLine ("Insertar elemento: ");
-                  p = int.Parse(Console.ReadLine());
+               if(opcion==4){
+             Console.WriteLine ("Insertar elemento: ");
+             p = int.Parse(Console.ReadLine());
             
-                  Console.WriteLine ("Inserte un numero: ");
-                  arr[p] = int.Parse(Console.ReadLine());
+             Console.WriteLine ("Inserte un numero: ");
+             arr[p] = int.Parse(Console.ReadLine());
              
-                  Console.WriteLine ("posicion: " + p + " Elemento: " + arr[p]);
-                 }
+             Console.WriteLine ("posicion: " + p + " Elemento: " + arr[p]);
+            }
 
                 if (opcion == 5)
                 {
@@ -66,7 +66,11 @@ namespace Seminario1
 
                     Console.WriteLine("posicion: " + p + " Elemento: " + arr[p]);
                 }
-                
+                 if(opcion==6){
+             Console.WriteLine ("Eliminar el primer elemento");
+             arr = arr.Where((source, index) =>index != 0).ToArray();
+             Console.WriteLine ("posicion 0: " + arr[0]);
+            }
                 
             } while (opcion != 10);
 
