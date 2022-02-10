@@ -72,6 +72,15 @@ namespace Seminario1
              Console.WriteLine ("posicion 0: " + arr[0]);
             }
                 
+                if (opcion == 7)
+                {
+                    Console.WriteLine("Elija el elemento: ");
+                    p = int.Parse(Console.ReadLine());
+                    arr = arr.Where((source, index) => p != 0).ToArray();
+                    Console.WriteLine("posicion: " + p + " Elemento: " + arr[0]);
+                }
+
+
             } while (opcion != 10);
 
         }
