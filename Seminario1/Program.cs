@@ -46,7 +46,15 @@ namespace Seminario1
                     Console.WriteLine ("posicion 0:" + arr[9]);
                 }
 
-               
+               if(opcion==4){
+             Console.WriteLine ("Insertar elemento: ");
+             p = int.Parse(Console.ReadLine());
+            
+             Console.WriteLine ("Inserte un numero: ");
+             arr[p] = int.Parse(Console.ReadLine());
+             
+             Console.WriteLine ("posicion: " + p + " Elemento: " + arr[p]);
+            }
 
             } while (opcion != 10);
 
